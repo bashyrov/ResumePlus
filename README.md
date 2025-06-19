@@ -15,13 +15,12 @@
 - HTML + CSS + JS 
 - SQLite
 - OpenAI API
-
-## 🤖 Powered by OpenAI
   
 ## ⚙️ Setup
 
 Clone the repository and install dependencies:
 
+```bash
 git clone https://github.com/bashyrov/ResumePlus.git
 cd cv-plus
 python -m venv venv
