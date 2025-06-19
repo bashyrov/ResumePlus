@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.sqlite3
+*.log
+
+# Environments
+.env
+venv/
+*.env
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+
+# Django
+db.sqlite3
+*.pyc
+staticfiles/
+media/
+
+# Coverage
+htmlcov/
+coverage.xml

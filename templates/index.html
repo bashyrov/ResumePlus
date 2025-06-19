@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+  <div class="container col-xxl-10 px-4 py-5">
+    <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+            <img src="{% static 'analyzer/images/vacancy.svg' %}" class="d-block mx-lg-auto img-fluid" alt="Resume Analyzer" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">CV Plus+</h1>
+            <p class="lead">Upload your CV and job description to find the best candidates. Our tool analyzes skills and matches them to your vacancy.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <a href="{% url 'upload_resume' %}" class="btn btn-primary btn-lg px-4 me-md-2">Upload Resumes</a>
+                <button type="button" class="btn btn-outline-secondary btn-lg px-4" disabled>Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <section class="py-5" id="features">
+        <div class="container px-5 my-5">
+            <div class="row gx-5">
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                  <h2 class="fw-bolder mb-0">A better way to start building.</h2>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row gx-5 row-cols-1 row-cols-md-2">
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-fill" viewBox="0 0 16 16">
+                                    <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
+                                </svg>
+                            </div>
+                            <h2 class="h5">Easy CV Upload</h2>
+                            <p class="mb-0">Emphasize the simplicity of uploading cv and job descriptions.</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-fill" viewBox="0 0 16 16">
+                                    <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
+                                </svg>
+                            </div>
+                            <h2 class="h5">Smart Skill Analysis</h2>
+                            <p class="mb-0">Highlight the tool’s ability to analyze skills and match candidates.</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-fill" viewBox="0 0 16 16">
+                                    <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
+                                </svg>
+                            </div>
+                            <h2 class="h5">Instant Results</h2>
+                            <p class="mb-0">Focus on the speed of generating candidate rankings.</p>
+                        </div>
+                        <div class="col mb-5 h-100">
+                            <div class="feature bg-primary bg-gradient text-white rounded-3 mb-3 d-flex align-items-center justify-content-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-fill" viewBox="0 0 16 16">
+                                    <path d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3m2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1"/>
+                                </svg>
+                            </div>
+                            <h2 class="h5">User-Friendly Interface</h2>
+                            <p class="mb-0">Describe the intuitive design for all users.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  <div class="py-5 bg-light">
+                <div class="container px-5 my-5">
+                    <div class="row gx-5 justify-content-center">
+                        <div class="col-lg-10 col-xl-7">
+                            <div class="text-center">
+                                <div class="fs-4 mb-4 fst-italic">
+                                  CV Plus+ has transformed our hiring process! It quickly identifies the best candidates, saving us hours of manual review.
+                                </div>
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img class="rounded-circle me-3" src="https://dummyimage.com/40x40/ced4da/6c757d" alt="...">
+                                    <div class="fw-bold">
+                                        Sarah Lee
+                                        <span class="fw-bold text-primary mx-1">/</span>
+                                        HR Manager, TalentWorks
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            const skills = parseInt(document.getElementById('skills_priority').value) || 0;
+            const experience = parseInt(document.getElementById('experience_priority').value) || 0;
+            const education = parseInt(document.getElementById('education_priority').value) || 0;
+            if (skills + experience + education !== 100 && !document.querySelector('input[name="vacancy_id"]').value) {
+                event.preventDefault();
+                alert('The sum of criteria priorities must be 100% for new vacancies.');
+            }
+        });
+
+        document.querySelectorAll('.vacancy-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                document.getElementById('job_title').value = this.dataset.jobTitle;
+                document.getElementById('skills').value = this.dataset.skills;
+                document.getElementById('experience').value = this.dataset.experience;
+                document.getElementById('responsibilities').value = this.dataset.responsibilities;
+                document.getElementById('level').value = this.dataset.level;
+                document.getElementById('additional').value = this.dataset.additional;
+                document.getElementById('skills_priority').value = this.dataset.skillsPriority;
+                document.getElementById('experience_priority').value = this.dataset.experiencePriority;
+                document.getElementById('education_priority').value = this.dataset.educationPriority;
+
+                let vacancyIdInput = document.querySelector('input[name="vacancy_id"]');
+                if (!vacancyIdInput) {
+                    vacancyIdInput = document.createElement('input');
+                    vacancyIdInput.type = 'hidden';
+                    vacancyIdInput.name = 'vacancy_id';
+                    document.querySelector('form').appendChild(vacancyIdInput);
+                }
+                vacancyIdInput.value = this.dataset.id;
+            });
+        });
+    </script>
+{% endblock %}
